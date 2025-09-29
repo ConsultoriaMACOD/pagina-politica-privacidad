@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Política de Privacidad — MACOD SAS</title>
+    <meta
+      name="description"
+      content="Política de Privacidad oficial de TransLogi (MACOD SAS) con detalle de datos recopilados, finalidades, permisos, derechos ARCO, transferencias internacionales y contacto DPO."
+    />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Smooth scrolling y ajuste para el header */
+      html {
+        scroll-behavior: smooth;
+      }
+      /* Compensar automáticamente el header fijo/alto al hacer scroll a anclas */
+      section {
+        scroll-margin-top: 4.5rem; /* suficiente para cabezera */
+      }
+
+      /* Enlaces activos y pequeñas transiciones */
+      .toc-link {
+        transition: color 150ms ease, transform 120ms ease;
+      }
+      .toc-link:hover {
+        transform: translateX(4px);
+      }
+
+      /* Mobile TOC backdrop */
+      .backdrop {
+        background: rgba(0, 0, 0, 0.35);
+      }
+    </style>
+  </head>
+  <body class="bg-slate-950 text-slate-800 antialiased">
+  <header class="relative overflow-hidden z-10">
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-indigo-500 via-indigo-600 to-slate-900 opacity-95"
+        aria-hidden="true"
+      ></div>
+      <div class="relative">
+        <div
+          class="max-w-5xl mx-auto px-6 pt-8 pb-8 text-white flex flex-col gap-6"
+        >
+          <div class="flex flex-col md:flex-row md:items-center gap-6">
+            <div class="flex-shrink-0">
+              <div
+                class="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur border border-white/20 flex items-center justify-center text-2xl font-semibold tracking-wide"
+                aria-hidden="true"
+              >
+                M
+              </div>
+            </div>
+            <div class="flex-1 min-w-0">
+              <p class="uppercase tracking-[0.3em] text-xs font-semibold">MACOD SAS · TransLogi</p>
+              <h1 class="text-3xl md:text-4xl font-bold mt-2 leading-tight">
+                Política de Privacidad y Protección de Datos Personales
+              </h1>
+              <p class="mt-3 text-sm md:text-base text-indigo-100 max-w-3xl">
+                Este documento describe cómo recopilamos, utilizamos, compartimos y protegemos la información de las personas que usan la aplicación móvil <strong>TransLogi</strong>. Cumplimos con la legislación ecuatoriana, la normativa internacional de protección de datos y las directrices de la ficha de Google Play.
+              </p>
+            </div>
+            <div class="hidden md:flex flex-col items-end gap-3 text-right text-sm text-indigo-100">
+              <div>
+                <span class="block text-xs uppercase tracking-widest">Vigente desde</span>
+                <strong>29 de septiembre de 2025</strong>
+              </div>
+              <div>
+                <span class="block text-xs uppercase tracking-widest">Versión</span>
+                <span>1.3</span>
+              </div>
+              <button
+                type="button"
+                class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-white/10 border border-white/30 hover:bg-white/20 transition"
+                onclick="window.print()"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                    d="M6 9V5a2 2 0 012-2h8a2 2 0 012 2v4M6 18h12a2 2 0 002-2v-3a2 2 0 00-2-2H6a2 2 0 00-2 2v3a2 2 0 002 2zm3 0h6"
+                  />
+                </svg>
+                Descargar / Imprimir
+              </button>
+            </div>
+          </div>
+
+          <div class="grid gap-4 md:grid-cols-1">
+            <div class="rounded-2xl border border-white/20 bg-white/10 p-5 backdrop-blur w-full">
+              <p class="text-xs uppercase tracking-wide text-white/70">Responsable del tratamiento</p>
+              <p class="mt-1 text-lg font-semibold">MACOD SAS</p>
+            </div>
+          </div>
+
+          <!-- Botón para abrir TOC en móvil -->
+          <div class="flex justify-between items-center gap-3 md:hidden">
+            <div class="text-xs text-indigo-100/80">
+              Última actualización: <strong>29 de septiembre de 2025</strong>
+            </div>
+            <button
+              id="mobile-toc-open"
+              aria-controls="mobile-toc"
+              aria-expanded="false"
+              class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-white/90 border border-white/10 text-slate-900 hover:bg-white/95 text-sm"
+            >
+              Índice
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile TOC modal -->
+    <div
+      id="mobile-toc"
+      class="fixed inset-0 z-40 hidden md:hidden"
+      aria-hidden="true"
+    >
+      <div
+        class="absolute inset-0 backdrop blur-sm backdrop-filter backdrop-brightness-75 backdrop-opacity-60 backdrop"
+        data-action="close-mobile"
+      ></div>
+      <div
+        class="absolute right-0 top-0 w-3/4 max-w-xs h-full bg-white shadow-lg p-5 overflow-auto"
+      >
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="font-medium">Contenido</h3>
+          <button
+            id="mobile-toc-close"
+            class="text-gray-500 hover:text-gray-700"
+          >
+            Cerrar
+          </button>
+        </div>
+        <nav>
+          <ul class="space-y-3 text-sm text-gray-700">
+            <li><a class="toc-link block" href="#resumen">Resumen</a></li>
+            <li><a class="toc-link block" href="#responsable">Responsable</a></li>
+            <li>
+              <a class="toc-link block" href="#alcance"
+                >Alcance y aceptación</a
+              >
+            </li>
+            <li>
+              <a class="toc-link block" href="#datos-recogidos"
+                >Qué datos recopilamos</a
+              >
+            </li>
+            <li>
+              <a class="toc-link block" href="#fines-base-legal"
+                >Finalidades y base legal</a
+              >
+            </li>
+            <li>
+              <a class="toc-link block" href="#compartir-terceros"
+                >Compartición con terceros</a
+              >
+            </li>
+            <li><a class="toc-link block" href="#permisos">Permisos</a></li>
+            <li>
+              <a class="toc-link block" href="#transferencias"
+                >Transferencias internacionales</a
+              >
+            </li>
+            <li><a class="toc-link block" href="#seguridad">Seguridad</a></li>
+            <li>
+              <a class="toc-link block" href="#retencion"
+                >Retención y eliminación</a
+              >
+            </li>
+            <li>
+              <a class="toc-link block" href="#derechos"
+                >Derechos del titular</a
+              >
+            </li>
+            <li>
+              <a class="toc-link block" href="#controles"
+                >Controles y elecciones</a
+              >
+            </li>
+            <li><a class="toc-link block" href="#contacto">Contacto</a></li>
+            <li><a class="toc-link block" href="#menores">Menores de edad</a></li>
+            <li><a class="toc-link block" href="#cambios">Cambios y vigencia</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <main class="relative mt-6">
+      <div class="max-w-6xl mx-auto px-4 pb-16">
+        <div
+          class="grid md:grid-cols-[260px_minmax(0,1fr)] gap-8 md:gap-10 items-start"
+        >
+        <!-- Sidebar / TOC -->
+        <aside class="hidden md:block sticky top-8 self-start">
+          <nav
+            id="toc-desktop"
+            class="bg-white border border-slate-200/70 rounded-2xl p-5 shadow-lg shadow-black/5"
+          >
+            <h2 class="text-sm font-semibold text-slate-700 mb-3 uppercase tracking-wide">
+              Contenido
+            </h2>
+            <ul class="space-y-2 text-sm text-slate-600">
+              <li>
+                <a class="toc-link hover:text-indigo-600" href="#resumen"
+                  >Resumen</a
+                >
+              </li>
+              <li>
+                <a class="toc-link hover:text-indigo-600" href="#responsable"
+                  >Responsable</a
+                >
+              </li>
+              <li>
+                <a class="toc-link hover:text-indigo-600" href="#alcance"
+                  >Alcance y aceptación</a
+                >
+              </li>
+              <li>
+                <a
+                  class="toc-link hover:text-indigo-600"
+                  href="#datos-recogidos"
+                  >Qué datos recopilamos</a
+                >
+              </li>
+              <li>
+                <a class="toc-link hover:text-indigo-600" href="#fines-base-legal"
+                  >Finalidades y base legal</a
+                >
+              </li>
+              <li>
+                <a
+                  class="toc-link hover:text-indigo-600"
+                  href="#compartir-terceros"
+                  >Compartición con terceros</a
+                >
+              </li>
+              <li>
+                <a class="toc-link hover:text-indigo-600" href="#permisos"
+                  >Permisos</a
+                >
+              </li>
+              <li>
+                <a class="toc-link hover:text-indigo-600" href="#transferencias"
+                  >Transferencias internacionales</a
+                >
+              </li>
+              <li>
+                <a class="toc-link hover:text-indigo-600" href="#seguridad"
+                  >Seguridad</a
+                >
+              </li>
+              <li>
+                <a class="toc-link hover:text-indigo-600" href="#retencion"
+                  >Retención y eliminación</a
+                >
+              </li>
+              <li>
+                <a class="toc-link hover:text-indigo-600" href="#derechos"
+                  >Derechos del titular</a
+                >
+              </li>
+              <li>
+                <a class="toc-link hover:text-indigo-600" href="#controles"
+                  >Controles y elecciones</a
+                >
+              </li>
+              <li>
+                <a class="toc-link hover:text-indigo-600" href="#contacto"
+                  >Contacto</a
+                >
+              </li>
+              <li>
+                <a class="toc-link hover:text-indigo-600" href="#menores"
+                  >Menores de edad</a
+                >
+              </li>
+              <li>
+                <a class="toc-link hover:text-indigo-600" href="#cambios"
+                  >Cambios y vigencia</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </aside>
+
+        <!-- Content -->
+        <article
+          class="md:col-start-2 bg-white/95 border border-slate-200 rounded-3xl shadow-xl shadow-black/5 p-8 md:p-10 prose prose-slate max-w-none"
+        >
+          <section id="resumen">
+            <h2 class="text-2xl font-bold text-slate-900">Resumen esencial</h2>
+            <p>
+              Bienvenido a la Política de Privacidad de <strong>MACOD SAS</strong>. A continuación encontrarás un resumen práctico. Si necesitas más detalle, navega con el índice lateral o utiliza el botón de impresión.
+            </p>
+            <div class="mt-6 grid gap-4 lg:grid-cols-2">
+              <div class="rounded-xl border border-slate-200 bg-slate-50 p-5">
+                <h3 class="text-base font-semibold text-slate-900">Qué hacemos con tus datos</h3>
+                <ul class="mt-3 space-y-2 text-sm leading-relaxed">
+                  <li><strong>Prestación del servicio:</strong> gestionar solicitudes, asignar conductores y procesar pagos.</li>
+                  <li><strong>Seguridad y soporte:</strong> seguimiento de viajes, prevención de fraude y atención al cliente.</li>
+                  <li><strong>Analítica:</strong> entender el desempeño de la app y mejorar funcionalidades.</li>
+                </ul>
+              </div>
+              <div class="rounded-xl border border-slate-200 bg-slate-50 p-5">
+                <h3 class="text-base font-semibold text-slate-900">Tus claves de control</h3>
+                <ul class="mt-3 space-y-2 text-sm leading-relaxed">
+                  <li><strong>Transparencia:</strong> notificamos cambios relevantes en la app y en esta política.</li>
+                  <li><strong>Derechos ARCO:</strong> puedes solicitar acceso, rectificación, portabilidad y eliminación.</li>
+                  <li><strong>Soporte directo:</strong> responderemos a las solicitudes en máximo 15 días hábiles.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="mt-6 rounded-xl border border-amber-200 bg-amber-50 p-5 text-sm text-amber-900">
+              <strong>Importante:</strong> la descarga y el uso de TransLogi implica aceptar esta política. Si no estás de acuerdo, puedes desinstalar la aplicación o escribirnos para ejercer tus derechos.
+            </div>
+          </section>
+
+          <section id="responsable">
+            <h3 class="text-xl font-semibold text-slate-900">1. Responsable del tratamiento</h3>
+            <p>
+              <strong>MACOD SAS</strong> actúa como responsable del tratamiento de los datos personales asociados a la aplicación <strong>TransLogi</strong>.
+            </p>
+            <div class="mt-4 grid gap-4 md:grid-cols-3">
+              <div class="rounded-lg border border-slate-200 bg-slate-50 p-4 text-sm">
+                <p class="text-xs uppercase tracking-wide text-slate-500">Correo de soporte</p>
+                <p class="font-medium text-slate-900">soporte@macod.com</p>
+                <p class="text-xs text-slate-500 mt-2">Atención de derechos de titulares y PQRS.</p>
+              </div>
+              <div class="rounded-lg border border-slate-200 bg-slate-50 p-4 text-sm">
+                <p class="text-xs uppercase tracking-wide text-slate-500">Teléfono</p>
+                <p class="font-medium text-slate-900">(Canal de soporte disponible vía correo)</p>
+                <p class="text-xs text-slate-500 mt-2">Horario: lunes a viernes 8:00-17:30 (GMT-5).</p>
+              </div>
+              <div class="rounded-lg border border-slate-200 bg-slate-50 p-4 text-sm">
+                <p class="text-xs uppercase tracking-wide text-slate-500">Enlace directo</p>
+                <p class="font-medium text-slate-900">
+                  <a class="text-indigo-600" href="mailto:soporte@macod.com">soporte@macod.com</a>
+                </p>
+                <p class="text-xs text-slate-500 mt-2">Delegado de Protección de Datos (DPO).</p>
+              </div>
+            </div>
+          </section>
+
+          <section id="alcance">
+            <h3 class="text-xl font-semibold text-slate-900">2. Alcance y aceptación</h3>
+            <p>
+              Esta política aplica a todas las personas que descarguen, creen una cuenta, naveguen o interactúen con TransLogi, incluyendo versiones beta, canales de soporte, integraciones con terceros y plataformas administrativas asociadas. Al instalar o usar la aplicación aceptas las condiciones descritas y declaras que cuentas con las autorizaciones necesarias para suministrar datos de terceros (por ejemplo, destinatarios de envíos).
+            </p>
+            <p>
+              En el caso de trabajadores, contratistas o aliados estratégicos, pueden existir cláusulas complementarias disponibles en sus contratos o manuales de seguridad de la información.
+            </p>
+          </section>
+
+          <section id="datos-recogidos">
+            <h3 class="text-xl font-semibold text-slate-900">3. Datos que recopilamos</h3>
+            <p>
+              Recopilamos los datos necesarios para operar TransLogi de forma segura y eficiente. El detalle por categoría se presenta a continuación:
+            </p>
+            <div class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+              <table class="w-full text-sm">
+                <thead class="bg-slate-900 text-white/90">
+                  <tr class="text-left">
+                    <th class="py-3 px-4 font-medium">Categoría</th>
+                    <th class="py-3 px-4 font-medium">Ejemplos de datos</th>
+                    <th class="py-3 px-4 font-medium">Cuándo se recolectan</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100">
+                  <tr>
+                    <td class="py-4 px-4 font-medium text-slate-900">Identidad y contacto</td>
+                    <td class="py-4 px-4">Nombre, apellidos, correo, teléfono, documento de identidad, rol (cliente/conductor).</td>
+                    <td class="py-4 px-4">Durante el registro, verificación de cuenta o actualizaciones de perfil.</td>
+                  </tr>
+                  <tr class="bg-slate-50/70">
+                    <td class="py-4 px-4 font-medium text-slate-900">Ubicación y movimiento</td>
+                    <td class="py-4 px-4">Coordenadas GPS en primer y segundo plano, rutas históricas, precisión y velocidad.</td>
+                    <td class="py-4 px-4">Al iniciar sesión como conductor, durante viajes activos o cuando se habilita el rastreo en segundo plano.</td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-4 font-medium text-slate-900">Transacciones</td>
+                    <td class="py-4 px-4">Identificadores de órdenes, tokens de pago, estado (éxito/fallo), historial de facturas.</td>
+                    <td class="py-4 px-4">Al confirmar un servicio, procesar pagos o emitir comprobantes.</td>
+                  </tr>
+                  <tr class="bg-slate-50/70">
+                    <td class="py-4 px-4 font-medium text-slate-900">Contenido generado</td>
+                    <td class="py-4 px-4">Fotos, evidencias de entrega, firmas, comentarios, calificaciones.</td>
+                    <td class="py-4 px-4">Cuando subes contenido a la app o respondes encuestas.</td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-4 font-medium text-slate-900">Datos técnicos</td>
+                    <td class="py-4 px-4">Modelo del dispositivo, sistema operativo, versión de la app, dirección IP, logs de eventos, identificadores de Firebase/Google.</td>
+                    <td class="py-4 px-4">Automáticamente al abrir la app, recibir notificaciones o cuando ocurre un error.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="mt-4 text-sm text-slate-600">
+              No recopilamos información sensible (salud, orientación sexual, credo) salvo que sea proporcionada voluntariamente para la prestación del servicio. Además, no monitoreamos conversaciones privadas fuera de los canales oficiales de TransLogi.
+            </p>
+          </section>
+
+          <section id="fines-base-legal">
+            <h3 class="text-xl font-semibold text-slate-900">4. Finalidades, base legal y retención</h3>
+            <p>
+              Tratamos tus datos conforme a las finalidades descritas en la siguiente matriz, alineadas con el Artículo 10 de la Ley 1581 de 2012 y con la Declaración de Seguridad de Datos de Google Play:
+            </p>
+            <div class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+              <table class="w-full text-sm">
+                <thead class="bg-indigo-600 text-white/95">
+                  <tr class="text-left">
+                    <th class="py-3 px-4 font-medium">Finalidad</th>
+                    <th class="py-3 px-4 font-medium">Datos involucrados</th>
+                    <th class="py-3 px-4 font-medium">Base legal</th>
+                    <th class="py-3 px-4 font-medium">Tiempo de conservación</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100">
+                  <tr>
+                    <td class="py-4 px-4 font-medium text-slate-900">Operar y mejorar la aplicación</td>
+                    <td class="py-4 px-4">Identidad, ubicación, datos técnicos.</td>
+                    <td class="py-4 px-4">Ejecución del contrato de servicios.</td>
+                    <td class="py-4 px-4">Mientras la cuenta esté activa y hasta 2 años después de la última actividad.</td>
+                  </tr>
+                  <tr class="bg-slate-50/70">
+                    <td class="py-4 px-4 font-medium text-slate-900">Procesar pagos y facturación</td>
+                    <td class="py-4 px-4">Transacciones, identidad.</td>
+                    <td class="py-4 px-4">Obligación legal y contractual.</td>
+                    <td class="py-4 px-4">Hasta 10 años según normativa contable aplicable.</td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-4 font-medium text-slate-900">Prevención de fraude y seguridad</td>
+                    <td class="py-4 px-4">Ubicación, datos técnicos, registros de acceso.</td>
+                    <td class="py-4 px-4">Interés legítimo y mandato legal.</td>
+                    <td class="py-4 px-4">Mientras exista riesgo asociado o requerimientos normativos.</td>
+                  </tr>
+                  <tr class="bg-slate-50/70">
+                    <td class="py-4 px-4 font-medium text-slate-900">Atención al cliente y soporte</td>
+                    <td class="py-4 px-4">Identidad, contenido generado, historiales de viaje.</td>
+                    <td class="py-4 px-4">Consentimiento y ejecución del contrato.</td>
+                    <td class="py-4 px-4">Hasta 18 meses después de resolver cada solicitud.</td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-4 font-medium text-slate-900">Marketing autorizado y recordatorios</td>
+                    <td class="py-4 px-4">Contacto, datos técnicos.</td>
+                    <td class="py-4 px-4">Consentimiento expreso (opt-in).</td>
+                    <td class="py-4 px-4">Hasta revocación o 24 meses sin interacción.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="mt-4 text-sm text-slate-600">
+              Cuando la base legal sea el consentimiento, podrás retirarlo en cualquier momento sin afectar la licitud del tratamiento previo. Si necesitas mayor detalle sobre las bases jurídicas aplicables, escríbenos a <a class="text-indigo-600" href="mailto:dpo@macod.com">dpo@macod.com</a>.
+            </p>
+          </section>
+
+          <section id="compartir-terceros">
+            <h3 class="text-xl font-semibold text-slate-900">5. Compartición con terceros y participación en el programa Data Safety</h3>
+            <p>
+              Solo compartimos datos con proveedores y aliados que cumplen estándares de seguridad y confidencialidad equivalentes a los de MACOD SAS. Ningún dato se vende. En nuestra ficha de Google Play declaramos las siguientes categorías de compartición:
+            </p>
+            <div class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+              <table class="w-full text-sm">
+                <thead class="bg-slate-900 text-white/90">
+                  <tr class="text-left">
+                    <th class="py-3 px-4 font-medium">Proveedor / Servicio</th>
+                    <th class="py-3 px-4 font-medium">Tipo de datos</th>
+                    <th class="py-3 px-4 font-medium">Finalidad</th>
+                    <th class="py-3 px-4 font-medium">Ubicación / Política</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100">
+                  <tr>
+                    <td class="py-4 px-4 font-medium text-slate-900">Pasarela de pagos PayPhone / Mercado Pago</td>
+                    <td class="py-4 px-4">Identificadores de transacción, token de medio de pago, valor, moneda.</td>
+                    <td class="py-4 px-4">Procesar cobros y desembolsos.</td>
+                    <td class="py-4 px-4">
+                      USA / LATAM ·
+                      <a class="text-indigo-600" href="https://www.payphone.app/politicas" target="_blank" rel="noopener">
+                        Política
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="bg-slate-50/70">
+                    <td class="py-4 px-4 font-medium text-slate-900">Google Firebase &amp; Google Cloud</td>
+                    <td class="py-4 px-4">Identificadores de dispositivo, logs, tokens push, analítica agregada.</td>
+                    <td class="py-4 px-4">Notificaciones, crash reports, backup.</td>
+                    <td class="py-4 px-4">
+                      USA / Irlanda ·
+                      <a class="text-indigo-600" href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">
+                        Política
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-4 font-medium text-slate-900">Mapas y rutas (Mapbox / Google Maps)</td>
+                    <td class="py-4 px-4">Coordenadas de origen y destino, contexto de ruta.</td>
+                    <td class="py-4 px-4">Calcular rutas y tiempo estimado.</td>
+                    <td class="py-4 px-4">
+                      USA / UE ·
+                      <a class="text-indigo-600" href="https://www.mapbox.com/legal/privacy" target="_blank" rel="noopener">
+                        Política
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="bg-slate-50/70">
+                    <td class="py-4 px-4 font-medium text-slate-900">Herramientas de soporte (Freshdesk / Zendesk)</td>
+                    <td class="py-4 px-4">Datos de contacto, tickets, historiales de soporte.</td>
+                    <td class="py-4 px-4">Gestionar PQRS y seguimiento.</td>
+                    <td class="py-4 px-4">
+                      UE / USA ·
+                      <a class="text-indigo-600" href="https://www.zendesk.com/company/agreements-and-terms/privacy-policy/" target="_blank" rel="noopener">
+                        Política
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="mt-4 text-sm text-slate-600">
+              Si un tercero deja de prestar el servicio, exigimos la eliminación o anonimización de los datos compartidos. También emitimos acuerdos de procesamiento de datos (DPA) y cláusulas contractuales modelo cuando aplica.
+            </p>
+            <div class="mt-6 rounded-xl border border-indigo-200 bg-indigo-50 p-5 text-sm text-indigo-900">
+              <h4 class="text-base font-semibold text-indigo-900">Resumen declarado en Google Play · Data Safety</h4>
+              <ul class="mt-3 grid gap-2 md:grid-cols-2">
+                <li><strong>Categorías recopiladas:</strong> Información personal, ubicación, información financiera, actividad en la app, información del dispositivo.</li>
+                <li><strong>Compartición:</strong> Solo con proveedores listados, para operación y cumplimiento legal. No vendemos datos.</li>
+                <li><strong>Cifrado de datos en tránsito:</strong> Sí.</li>
+                <li><strong>Solicitud de eliminación:</strong> Disponible vía soporte en máximo 15 días hábiles.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section id="permisos">
+            <h3 class="text-xl font-semibold text-slate-900">6. Permisos del dispositivo</h3>
+            <p>
+              Solicitamos únicamente los permisos necesarios para que TransLogi funcione. Puedes gestionarlos en cualquier momento desde los ajustes del sistema operativo. A continuación encontrarás el detalle requerido por Google Play:
+            </p>
+            <div class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+              <table class="w-full text-sm">
+                <thead class="bg-slate-900 text-white/90">
+                  <tr class="text-left">
+                    <th class="py-3 px-4 font-medium">Permiso</th>
+                    <th class="py-3 px-4 font-medium">Uso dentro de TransLogi</th>
+                    <th class="py-3 px-4 font-medium">¿Es obligatorio?</th>
+                    <th class="py-3 px-4 font-medium">Cómo desactivarlo</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100">
+                  <tr>
+                    <td class="py-4 px-4 font-medium text-slate-900">Ubicación precisa (foreground / background)</td>
+                    <td class="py-4 px-4">Rastrear viajes, calcular tiempos estimados y brindar soporte ante incidentes.</td>
+                    <td class="py-4 px-4">Obligatorio para conductores durante viajes activos. Opcional para clientes.</td>
+                    <td class="py-4 px-4">Ajustes del sistema &gt; Aplicaciones &gt; TransLogi &gt; Permisos &gt; Ubicación.</td>
+                  </tr>
+                  <tr class="bg-slate-50/70">
+                    <td class="py-4 px-4 font-medium text-slate-900">Cámara y almacenamiento</td>
+                    <td class="py-4 px-4">Capturar comprobantes de entrega, evidencias de mercancía y documentos.</td>
+                    <td class="py-4 px-4">Opcional, pero sin él no podrás adjuntar pruebas.</td>
+                    <td class="py-4 px-4">Desactiva el permiso desde Ajustes &gt; TransLogi &gt; Permisos &gt; Cámara/Archivos.</td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-4 font-medium text-slate-900">Notificaciones push</td>
+                    <td class="py-4 px-4">Alertas de ofertas, cambios de estado del viaje, recordatorios de pago.</td>
+                    <td class="py-4 px-4">Recomendado para recibir actualizaciones en tiempo real.</td>
+                    <td class="py-4 px-4">Ajustes del sistema &gt; Notificaciones &gt; TransLogi.</td>
+                  </tr>
+                  <tr class="bg-slate-50/70">
+                    <td class="py-4 px-4 font-medium text-slate-900">Acceso a red / Internet</td>
+                    <td class="py-4 px-4">Sincronizar datos, enviar actualizaciones, validar credenciales.</td>
+                    <td class="py-4 px-4">Sí, indispensable para operar.</td>
+                    <td class="py-4 px-4">Desactiva datos móviles/Wi-Fi o utiliza el modo offline limitado.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="mt-4 text-sm text-slate-600">
+              Si retiras un permiso esencial, algunas funciones podrían quedar suspendidas. Te avisaremos antes de que eso ocurra para que puedas decidir.
+            </p>
+          </section>
+
+          <section id="transferencias">
+            <h3 class="text-xl font-semibold text-slate-900">7. Transferencias internacionales de datos</h3>
+            <p>
+              Los datos personales pueden alojarse en servidores ubicados en Estados Unidos, Canadá o la Unión Europea a través de nuestros proveedores cloud. En todos los casos:
+            </p>
+            <ul>
+              <li>Firmamos acuerdos con cláusulas contractuales modelo aprobadas por la Unión Europea cuando aplica.</li>
+              <li>Verificamos que el proveedor cuente con certificaciones internacionales (ISO 27001, SOC 2, GDPR).</li>
+              <li>Implementamos cifrado de extremo a extremo y controles de acceso basados en roles.</li>
+            </ul>
+            <p>
+              Si se requiere una transferencia a un país sin nivel adecuado de protección, solicitaremos tu autorización previa o utilizaremos mecanismos validados por la autoridad de protección de datos competente en Ecuador o mecanismos equivalentes.
+            </p>
+          </section>
+
+          <section id="seguridad">
+            <h3 class="text-xl font-semibold text-slate-900">8. Medidas de seguridad</h3>
+            <p>
+              Sabemos que la seguridad de tu información es prioritaria. Por eso aplicamos medidas técnicas, humanas y administrativas, entre ellas:
+            </p>
+            <ul>
+              <li>Cifrado TLS 1.2+ para comunicaciones y cifrado AES-256 para datos sensibles almacenados.</li>
+              <li>Autenticación multifactor para el equipo interno y segregación de ambientes (dev, staging, producción).</li>
+              <li>Monitoreo continuo de eventos, pruebas de penetración anuales y programa de respuesta a incidentes.</li>
+              <li>Respaldo automatizado con retención de 30 días y planes de recuperación ante desastres.</li>
+            </ul>
+            <p class="text-sm text-slate-600">
+              En caso de una vulneración que comprometa tus datos, te notificaremos sin demoras injustificadas a través de los canales registrados y cumpliremos con los reportes regulatorios aplicables.
+            </p>
+          </section>
+
+          <section id="retencion">
+            <h3 class="text-xl font-semibold text-slate-900">9. Retención y eliminación de datos</h3>
+            <p>
+              Conservamos la información durante el tiempo estrictamente necesario para cumplir las finalidades descritas y las obligaciones legales. Pasado ese periodo, procedemos a su eliminación o anonimización segura.
+            </p>
+            <div class="mt-4 rounded-xl border border-slate-200 bg-slate-50 p-5 text-sm">
+              <ul class="space-y-2 leading-relaxed">
+                <li><strong>Cuentas inactivas:</strong> se anonimiza información a los 24 meses sin actividad, conservando solo lo exigido por ley.</li>
+                <li><strong>Documentación contractual y facturación:</strong> se almacena mínimo 10 años según la normativa tributaria aplicable.</li>
+                <li><strong>Registros técnicos y logs:</strong> se eliminan o agregan cada 18 meses, salvo incidentes de seguridad.</li>
+                <li><strong>Contenido multimedia:</strong> puedes eliminarlo manualmente desde la app o solicitarlo por soporte.</li>
+              </ul>
+            </div>
+            <p class="mt-4 text-sm text-slate-600">
+              Para solicitar la eliminación de tu cuenta escribe a <a class="text-indigo-600" href="mailto:soporte@macod.com">soporte@macod.com</a> con el asunto “Eliminación TransLogi”. Responderemos en máximo 15 días hábiles confirmando la acción o solicitando información adicional para validar tu identidad.
+            </p>
+          </section>
+
+          <section id="derechos">
+            <h3 class="text-xl font-semibold text-slate-900">10. Derechos de los titulares</h3>
+            <p>
+              Puedes ejercer los derechos contemplados en la Ley 1581 de 2012, el Decreto 1377 de 2013 y normas concordantes. Estos incluyen:
+            </p>
+            <ul>
+              <li><strong>Acceso:</strong> conocer los datos tratados y su origen.</li>
+              <li><strong>Rectificación:</strong> actualizar o corregir datos inexactos o incompletos.</li>
+              <li><strong>Cancelación / Supresión:</strong> solicitar la eliminación cuando sea procedente.</li>
+              <li><strong>Oposición:</strong> oponerte al tratamiento por motivos fundados.</li>
+              <li><strong>Portabilidad:</strong> recibir tus datos en un formato estructurado y de uso común.</li>
+              <li><strong>Revocatoria del consentimiento:</strong> retirar la autorización otorgada.</li>
+            </ul>
+            <div class="mt-4 rounded-xl border border-indigo-200 bg-indigo-50 p-5 text-sm text-indigo-900">
+              <strong>Procedimiento:</strong> envía tu solicitud al correo <a class="font-semibold" href="mailto:dpo@macod.com">dpo@macod.com</a> con tu nombre completo, tipo y número de documento, descripción del requerimiento y documentos de soporte. Si actúas como apoderado adjunta el poder. Responderemos dentro de los términos legales (10 días hábiles para consultas, 15 para reclamos) y te informaremos del estado del trámite.
+            </div>
+          </section>
+
+          <section id="controles">
+            <h3 class="text-xl font-semibold text-slate-900">11. Controles y elecciones disponibles</h3>
+            <ul class="space-y-3">
+              <li><strong>Panel de privacidad en la app:</strong> consulta y actualiza datos personales, métodos de pago y preferencias de comunicación.</li>
+              <li><strong>Configuración de permisos:</strong> administra acceso a ubicación, cámara y notificaciones desde los ajustes de tu dispositivo.</li>
+              <li><strong>Opt-out de comunicaciones:</strong> cada correo comercial incluye un enlace para darte de baja de futuras campañas.</li>
+              <li><strong>Desinstalación:</strong> al desinstalar la app se detiene el envío de datos, pero debes solicitar la eliminación para borrar registros existentes.</li>
+            </ul>
+            <p class="mt-4 text-sm text-slate-600">
+              Si detectas información desactualizada o crees que se está haciendo un uso indebido, comunícalo de inmediato para acompañarte en la corrección.
+            </p>
+          </section>
+
+          <section id="contacto">
+            <h3 class="text-xl font-semibold text-slate-900">12. Canales de contacto y PQRS</h3>
+            <p>
+              Estamos disponibles para atender tus solicitudes, quejas, reclamos o sugerencias (PQRS) relacionadas con la protección de datos:
+            </p>
+            <div class="mt-4 grid gap-4 md:grid-cols-2">
+              <div class="rounded-xl border border-slate-200 bg-white p-5 text-sm">
+                <h4 class="text-base font-semibold text-slate-900">Mesa de ayuda</h4>
+                <p class="mt-2">Correo: <a class="text-indigo-600" href="mailto:soporte@macod.com">soporte@macod.com</a></p>
+                <p>Formulario web: <a class="text-indigo-600" href="https://macod.com/privacidad" target="_blank" rel="noopener">https://macod.com/privacidad</a></p>
+                <p class="mt-2 text-xs text-slate-500">Tiempo de respuesta promedio: 2 a 5 días hábiles.</p>
+              </div>
+              <div class="rounded-xl border border-slate-200 bg-white p-5 text-sm">
+                <h4 class="text-base font-semibold text-slate-900">Canal físico</h4>
+                <p class="mt-2">Horario de atención: lunes a viernes 8:00-17:30 (GMT-5).</p>
+                <p class="mt-2 text-xs text-slate-500">Recuerda agendar cita previa para atención presencial.</p>
+              </div>
+            </div>
+            <p class="mt-4 text-sm text-slate-600">
+              Si no recibes respuesta o no estás conforme, puedes escalar tu caso ante la autoridad de protección de datos competente en Ecuador o la entidad supervisora correspondiente.
+            </p>
+          </section>
+
+          <section id="menores">
+            <h3 class="text-xl font-semibold text-slate-900">13. Uso por menores de edad</h3>
+            <p>
+              TransLogi no está dirigida a menores de 18 años. No registramos intencionalmente datos de niños, niñas o adolescentes. Si un representante legal cree que un menor nos proporcionó información, puede solicitar su eliminación inmediata escribiendo a <a class="text-indigo-600" href="mailto:dpo@macod.com">dpo@macod.com</a>.
+            </p>
+          </section>
+
+          <section id="cambios">
+            <h3 class="text-xl font-semibold text-slate-900">14. Cambios y vigencia de la política</h3>
+            <p>
+              Esta política entra en vigor el <strong>29 de septiembre de 2025</strong>. Podremos actualizarla para reflejar cambios legislativos, operativos o de los servicios ofrecidos. Te informaremos de las modificaciones mediante:
+            </p>
+            <ul>
+              <li>Notificaciones dentro de la aplicación antes de que la nueva versión entre en vigor.</li>
+              <li>Correo electrónico a los usuarios registrados cuando el cambio sea sustancial.</li>
+              <li>Actualización de la fecha “Última actualización” en la parte superior de esta página.</li>
+            </ul>
+            <p>
+              Conservaremos versiones anteriores durante mínimo 5 años para consulta. El uso continuado de la app después de la notificación implicará la aceptación de los cambios.
+            </p>
+          </section>
+        </article>
+        </div>
+      </div>
+
+      <footer class="px-4 pb-10">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center text-sm text-slate-600">
+            <p>© 2025 MACOD SAS — Política de Privacidad de TransLogi.</p>
+            <p class="mt-1 text-xs text-slate-500">Última actualización: 29 de septiembre de 2025</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      // Mejoras de navegación: offset por header, smooth scroll y resaltado activo
+      (function () {
+        const header = document.querySelector("header");
+        const tocLinks = Array.from(document.querySelectorAll(".toc-link"));
+        const sections = Array.from(
+          document.querySelectorAll("article section[id]")
+        );
+        let currentObserver = null;
+
+        function getHeaderHeight() {
+          return header ? header.getBoundingClientRect().height : 0;
+        }
+
+        // Interceptar clicks en anchors y desplazar con offset
+        tocLinks.forEach((link) => {
+          link.addEventListener("click", function (ev) {
+            const href = link.getAttribute("href");
+            if (href && href.startsWith("#")) {
+              ev.preventDefault();
+              const id = href.slice(1);
+              const target = document.getElementById(id);
+              if (target) {
+                const y =
+                  target.getBoundingClientRect().top +
+                  window.pageYOffset -
+                  getHeaderHeight() -
+                  12; // pequeño margen
+                window.scrollTo({ top: y, behavior: "smooth" });
+              }
+
+              // cerrar TOC móvil si está abierto
+              const mobile = document.getElementById("mobile-toc");
+              if (mobile && !mobile.classList.contains("hidden")) {
+                mobile.classList.add("hidden");
+              }
+
+              // actualizar estados visuales
+              setActiveLink(id);
+            }
+          });
+        });
+
+        // Highlight dinámico usando IntersectionObserver
+        function setActiveLink(id) {
+          tocLinks.forEach((l) => {
+            const href = l.getAttribute("href") || "";
+            if (href === "#" + id) {
+              l.classList.add("text-indigo-600", "font-semibold");
+            } else {
+              l.classList.remove("text-indigo-600", "font-semibold");
+            }
+          });
+        }
+
+        // Crear observer con margins dependientes del header
+        function createObserver() {
+          if (currentObserver) {
+            currentObserver.disconnect();
+          }
+          const rootMarginTop = -(getHeaderHeight() + 20) + "px";
+          const options = {
+            root: null,
+            rootMargin: rootMarginTop + " 0px -40% 0px",
+            threshold: 0,
+          };
+
+          currentObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                setActiveLink(entry.target.id);
+              }
+            });
+          }, options);
+
+          sections.forEach((s) => currentObserver.observe(s));
+        }
+
+        // Esperar carga completa para medir header
+        window.addEventListener("load", function () {
+          createObserver();
+        });
+        // Recalcular al cambiar tamaño
+        window.addEventListener("resize", function () {
+          // Reiniciar observer
+          createObserver();
+        });
+
+        // Mobile TOC open/close
+        const mobileOpen = document.getElementById("mobile-toc-open");
+        const mobileClose = document.getElementById("mobile-toc-close");
+        const mobileTOC = document.getElementById("mobile-toc");
+        const mobileBackdrop = document.querySelector("#mobile-toc .backdrop");
+
+        if (mobileOpen && mobileTOC) {
+          mobileOpen.addEventListener("click", function () {
+            mobileTOC.classList.remove("hidden");
+            mobileOpen.setAttribute("aria-expanded", "true");
+          });
+        }
+        if (mobileClose && mobileTOC) {
+          mobileClose.addEventListener("click", function () {
+            mobileTOC.classList.add("hidden");
+            mobileOpen.setAttribute("aria-expanded", "false");
+          });
+        }
+
+        // cerrar toc móvil al pulsar el backdrop
+        document.addEventListener("click", function (e) {
+          const mobile = document.getElementById("mobile-toc");
+          if (!mobile) return;
+          const backdropEl = mobile.querySelector(".backdrop");
+          if (backdropEl && e.target === backdropEl) {
+            mobile.classList.add("hidden");
+            if (mobileOpen) mobileOpen.setAttribute("aria-expanded", "false");
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>

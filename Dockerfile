@@ -13,12 +13,13 @@ COPY . /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Expose port
-EXPOSE 80
+# Expose port (nginx configured to listen on 8080)
+EXPOSE 8080
 
 # Add a simple healthcheck so Coolify / reverse-proxies can verify the container
 # is serving HTTP before routing traffic to it.
 HEALTHCHECK --interval=20s --timeout=3s --start-period=5s --retries=3 \
-	CMD wget -q -O /dev/null http://127.0.0.1:80/ || exit 1
+	CMD wget -q -O /dev/null http://127.0.0.1:8080/ || exit 1
 
 # Start nginx (default cmd)
 CMD ["nginx", "-g", "daemon off;"]

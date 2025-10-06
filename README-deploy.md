@@ -12,7 +12,7 @@ docker build -t macod-privacidad:latest .
 2) Ejecutar la imagen localmente:
 
 ```powershell
-docker run --rm -p 8080:80 --name macod-privacidad macod-privacidad:latest
+docker run --rm -p 8080:8080 --name macod-privacidad macod-privacidad:latest
 # Abrir http://localhost:8080 en el navegador
 ```
 
@@ -22,6 +22,8 @@ docker run --rm -p 8080:80 --name macod-privacidad macod-privacidad:latest
 - Asegúrate de que el contenedor responde en el puerto 80 internamente. El Dockerfile expone el puerto 80 y la configuración de nginx escucha en `0.0.0.0:80`.
 - Coolify (o el proxy que uses) normalmente hará healthchecks al endpoint interno. Añadimos un HEALTHCHECK para que la plataforma espere a que el contenedor sirva antes de enrutar tráfico.
 - Revisa que en la configuración de tu servicio en Coolify el puerto objetivo sea 80 y que no haya reglas de routing que cambien el host o path.
+
+- Revisa que en la configuración de tu servicio en Coolify el puerto objetivo sea 8080 y que no haya reglas de routing que cambien el host o path.
 
 4) Troubleshooting avanzado:
 

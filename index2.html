@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Translogi · Eliminación de cuenta</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Paleta (ajusta si hace falta) -->
+  <style>
+    :root{
+      --bg:#0f172a;           /* fondo oscuro primario */
+      --bg-soft:#0b1226;      /* fondo gradiente */
+      --card:#0f172a;         /* tarjetas/bloques */
+      --text:#e5e7eb;         /* texto principal */
+      --muted:#cbd5e1;        /* texto secundario */
+      --primary:#38bdf8;      /* acento principal */
+      --primary-200:#a5e8ff;  /* acento claro */
+      --ring:#7dd3fc;         /* foco/outline */
+    }
+    html,body{background:#0e1326;}
+    .glass{
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,.08);
+    }
+    .shadow-soft{ box-shadow: 0 10px 30px rgba(0,0,0,.35); }
+    .prose-list li::marker{ color: var(--primary); }
+    /* Focus visible */
+    :focus-visible{ outline: 2px solid var(--ring); outline-offset: 2px; border-radius: .5rem; }
+  </style>
+
+  <!-- Fuente opcional -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style> body{font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;} </style>
+
+  <!-- Schema.org HowTo (opcional, ayuda a claridad) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Eliminar cuenta de Translogi",
+    "description": "Proceso para solicitar la eliminación de cuenta y datos asociados en Translogi.",
+    "step": [
+      {"@type":"HowToStep","name":"Preparar solicitud","text":"Indique el correo registrado en Translogi y el motivo de la eliminación."},
+      {"@type":"HowToStep","name":"Enviar correo","text":"Envíe un correo a administracion@macod.ec desde la cuenta registrada o adjunte comprobante de titularidad."},
+      {"@type":"HowToStep","name":"Confirmación","text":"Recibirá confirmación y, si procede, se eliminarán los datos según la política descrita."}
+    ]
+  }
+  </script>
+</head>
+
+<body class="text-[var(--text)]">
+  <header class="relative overflow-hidden">
+    <div class="absolute inset-0"
+         style="background: radial-gradient(1200px 600px at 80% -10%, rgba(56,189,248,.25), transparent),
+                         radial-gradient(900px 500px at -10% 0%, rgba(56,189,248,.15), transparent),
+                         linear-gradient(180deg, var(--bg-soft), var(--bg));">
+    </div>
+
+    <div class="relative max-w-5xl mx-auto px-6 py-16">
+      <div class="glass rounded-2xl p-8 md:p-12 shadow-soft">
+        <div class="flex items-center gap-3">
+          <div class="h-10 w-10 rounded-xl"
+               style="background: linear-gradient(135deg, var(--primary), var(--primary-200));"></div>
+          <h1 class="text-2xl md:text-3xl font-bold tracking-tight">Translogi · Eliminación de cuenta</h1>
+        </div>
+        <p class="mt-4 text-[var(--muted)] leading-relaxed">
+          Esta página explica cómo solicitar la eliminación de su cuenta y de los datos asociados en la aplicación
+          <span class="font-semibold text-[var(--primary)]">Translogi</span>.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 pb-20 -mt-6">
+    <section class="grid md:grid-cols-3 gap-6">
+      <!-- Pasos -->
+      <article class="md:col-span-2 glass rounded-2xl p-6 md:p-8 shadow-soft">
+        <h2 class="text-xl font-semibold">Pasos para solicitar la eliminación</h2>
+        <ol class="mt-4 list-decimal ms-5 leading-7 prose-list">
+          <li class="mb-2">Prepare su solicitud indicando: correo registrado y motivo de la eliminación.</li>
+          <li class="mb-2">Envíe un correo a <a class="underline decoration-[var(--primary)] hover:text-[var(--primary)]"
+            href="mailto:administracion@macod.ec?subject=Solicitud%20de%20eliminaci%C3%B3n%20de%20cuenta%20Translogi&body=Hola%2C%0AQuiero%20eliminar%20mi%20cuenta%20de%20Translogi.%0ACorreo%20registrado%3A%20%0AMotivo%3A%20%0A%0AConfirmo%20que%20soy%20titular%20de%20esta%20cuenta.">administracion@macod.ec</a> desde la cuenta registrada (o adjunte prueba de titularidad).</li>
+          <li class="mb-2">Una vez validada la identidad, procederemos con la eliminación según la política de datos.</li>
+        </ol>
+
+        <div class="mt-6">
+          <a
+            class="inline-flex items-center justify-center rounded-xl px-5 py-3 font-semibold shadow-soft transition
+                   hover:translate-y-[-1px] focus-visible:ring-2"
+            style="background: linear-gradient(135deg, var(--primary), var(--primary-200)); color:#0a0f1f;"
+            href="mailto:administracion@macod.ec?subject=Solicitud%20de%20eliminaci%C3%B3n%20de%20cuenta%20Translogi&body=Hola%2C%0AQuiero%20eliminar%20mi%20cuenta%20de%20Translogi.%0ACorreo%20registrado%3A%20%0AMotivo%3A%20%0A%0AConfirmo%20que%20soy%20titular%20de%20esta%20cuenta.">
+            Enviar solicitud por correo
+          </a>
+          <p class="mt-3 text-sm text-[var(--muted)]">
+            Tiempo estimado de respuesta: 5–10 días hábiles desde la recepción de la solicitud completa.
+          </p>
+        </div>
+      </article>
+
+      <!-- Política de datos -->
+      <aside class="glass rounded-2xl p-6 md:p-8 shadow-soft">
+        <h3 class="text-lg font-semibold">Datos que se eliminan</h3>
+        <ul class="mt-3 list-disc ms-5 leading-7 prose-list">
+          <li>Cuenta y credenciales.</li>
+          <li>Perfil (nombre, teléfono, rol).</li>
+          <li>Solicitudes de viaje creadas por el usuario.</li>
+          <li>Historial de viajes asociados al usuario cuando la ley lo permita.</li>
+        </ul>
+
+        <h3 class="mt-6 text-lg font-semibold">Datos que se conservan</h3>
+        <ul class="mt-3 list-disc ms-5 leading-7 prose-list">
+          <li>Registros necesarios para cumplimiento legal, prevención de fraude y contabilidad.</li>
+          <li>Comprobantes de pago y facturación.</li>
+        </ul>
+
+        <h3 class="mt-6 text-lg font-semibold">Periodos de retención</h3>
+        <p class="mt-3 text-[var(--muted)] leading-7">
+          Los datos sujetos a obligaciones legales se conservan por los plazos aplicables (p. ej., normativas
+          contables y antifraude); el resto se elimina tras confirmar la solicitud.
+        </p>
+      </aside>
+    </section>
+
+    <!-- Contacto alterno -->
+    <section class="mt-6 glass rounded-2xl p-6 md:p-8 shadow-soft">
+      <h4 class="text-lg font-semibold">Contacto alterno</h4>
+      <p class="mt-3 text-[var(--muted)] leading-7">
+        Si necesita asistencia adicional, escriba a
+        <a class="underline decoration-[var(--primary)] hover:text-[var(--primary)]" href="mailto:administracion@macod.ec">
+          administracion@macod.ec
+        </a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="max-w-5xl mx-auto px-6 pb-10 text-sm text-[var(--muted)]">
+    <div class="border-t border-white/10 pt-6">
+      © <span id="y"></span> Translogi · Desarrollado por MACOD
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
